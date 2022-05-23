@@ -15,21 +15,24 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="main-bg">
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false">
                 <a href="#home">HOME</a>
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#grid-one">grid-one</a></li>
                     <li><a href="#gallery">gallery</a></li>
                     <li><a href="#grid-two">grid-two</a></li>
                     <li><a href="#pricing">pricing</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -103,7 +106,7 @@
                         alt="photos" />
                 </div>
                 <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1650888975725-5754f80362f6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MzIyNjM5OA&ixlib=rb-1.2.1&q=80&w=360"
+                    <img src="https://images.unsplash.com/photo-1651868722945-fab942eaaec5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MzI0MzkyMw&ixlib=rb-1.2.1&q=80&w=360"
                         alt="photos" />
                 </div>
                 <div class="gallery-img">
@@ -111,15 +114,15 @@
                         alt="photos" />
                 </div>
                 <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1650888975725-5754f80362f6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MzIyNjM5OA&ixlib=rb-1.2.1&q=80&w=360"
+                    <img src="https://images.unsplash.com/photo-1650765814785-aaea8d4dbf94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MzI0Mzg1OQ&ixlib=rb-1.2.1&q=80&w=360"
                         alt="photos" />
                 </div>
                 <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1650888975725-5754f80362f6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MzIyNjM5OA&ixlib=rb-1.2.1&q=80&w=360"
+                    <img src="https://images.unsplash.com/photo-1651868722939-61ed67817328?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MzI0NDAxMg&ixlib=rb-1.2.1&q=80&w=360"
                         alt="photos" />
                 </div>
                 <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1650888975725-5754f80362f6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MzIyNjM5OA&ixlib=rb-1.2.1&q=80&w=360"
+                    <img src="https://images.unsplash.com/photo-1652739923822-9e492749f2b7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1MzI0MzgzMQ&ixlib=rb-1.2.1&q=80&w=360"
                         alt="photos" />
                 </div>
             </div>
@@ -217,6 +220,49 @@
 
     </section>
 
-</body>
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>CONTACT</h2>
+                <p>Hello here you can contact me</p>
+            </div>
+            <div class="contact-form">
+                <img src="assets/img/contato2.svg" alt="Imagem contato">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact Me</legend>
+                    <div class="form-group">
+                        <label for="frist-name">Frist name</label>
+                        <input type="text" name="frist-name" id="frist-name" placeholder="Your name">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="frist-name" placeholder="Your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="frist-name" placeholder="Your e-mail">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+       <p><a href="https://www.linkedin.com/in/calebe-santos-146316218/" target="_blank">Click here to find out who made it!</a></p> 
+    </footer>
+
+    <a class="back-to-top" href="#">⇪</a>
+
+</body>
 </html>
